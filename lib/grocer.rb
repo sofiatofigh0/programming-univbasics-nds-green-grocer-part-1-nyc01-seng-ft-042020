@@ -31,6 +31,9 @@ def consolidate_cart(cart)
    end
    count += 1
  end
+ new_array << new_item
+end
+ 
       
   
         
