@@ -18,15 +18,11 @@ def consolidate_cart(cart)
   count=0
   
   while count < cart.length do
-   new_array.each do |w|
-    w.each do |y,z|
-     if name == z
-      return w
-    end
-   end
-  end
- return nil
-   
+   new_item = find_item_by_name_in_collection(cart[count][:item], new_array)
+   if new_item
+     new_item[:count] = new_item[:count] + 1
+   else
+     
       
   
         
