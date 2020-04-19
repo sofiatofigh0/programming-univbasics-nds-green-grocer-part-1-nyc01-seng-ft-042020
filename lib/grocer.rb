@@ -17,25 +17,16 @@ def consolidate_cart(cart)
   new_array=[]
   count=0
   
-  while count < cart.length do 
-    cart[count]
-    count=count+1
-  
-  new_hash={}
-  count=[:count]
-  new_hash[count]=0
-
-  cart.each do |w|
+  while count < cart.length do
+   cart.each do |w|
     w.each do |y,z|
-      if w.include?(w[y])
-        w[count] += 1
-      else
-        w[count] == 1
-     end
+     if name == z
+      return w
     end
+   end
   end
-  w
-end
+ return nil
+   
       
   
         
