@@ -18,6 +18,8 @@ def consolidate_cart(cart)
   count=0
   
   while count < cart.length do 
+    cart[count]
+    count=count+1
   
   new_hash={}
   count=[:count]
