@@ -18,7 +18,7 @@ def consolidate_cart(cart)
   count=0
   
   while count < cart.length do
-   cart.each do |w|
+   new_array.each do |w|
     w.each do |y,z|
      if name == z
       return w
